@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 17, 2015 at 08:40 PM
+-- Generation Time: Jun 24, 2015 at 07:51 PM
 -- Server version: 5.6.23
 -- PHP Version: 5.5.20
 
@@ -34,8 +34,9 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(20) NOT NULL,
   `first_name` varchar(50) DEFAULT NULL,
   `last_name` varchar(50) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
   `password` varchar(255) NOT NULL,
-  `active` tinyint(1) NOT NULL,
+  `active` tinyint(1) DEFAULT '0',
   `active_hash` varchar(255) DEFAULT NULL,
   `recover_hash` varchar(255) DEFAULT NULL,
   `remember_identifier` varchar(255) DEFAULT NULL,
