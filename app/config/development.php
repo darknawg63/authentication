@@ -26,8 +26,8 @@ return [
         'smtp_auth' => true,
         'smtp_secure' => 'tls',
         'host' => 'smtp.gmail.com',
-        'username' => 'tabby@codecourse.com',
-        'password' => 'ilovec4ts',
+        'username' => 'pethelius@gmail.com',
+        'password' => 'Hellojrad1',
         'port' => 587,
         'html' => true
     ],
