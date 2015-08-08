@@ -55,7 +55,7 @@ $app->container->singleton('mail', function() use ($app) {
     $mailer = new PHPMailer;
     
     $mailer->isSMTP();
-    $mailer->SMTPDebug = 2;
+    $mailer->SMTPDebug = 0;
     $mailer->SMTPAuth = $app->config->get('mail.smtp_auth');
     $mailer->SMTPSecure = $app->config->get('mail.smtp_secure');
     $mailer->host = $app->config->get('mail.host');
